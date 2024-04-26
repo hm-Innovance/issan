@@ -19,6 +19,4 @@ class ApiError extends Error {
     }
 }
 
-const data = new ApiError(409, "User with email or username already exists")
-console.log(data)
-// export {ApiError}
+export {ApiError}
