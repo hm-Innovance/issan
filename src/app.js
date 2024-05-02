@@ -18,10 +18,12 @@ app.use(errorHandler)
 //routes import
 import userRouter from './routes/user.routes.js';
 import chapterRouter from './routes/chapter.route.js';
+import eventRouter from './routes/event.route.js';
 
 //routes declaration
 app.use("/api/v1/users", userRouter);
-app.use("/api/v1/chapters", chapterRouter)
+app.use("/api/v1/chapters", chapterRouter);
+app.use("/api/v1/events", eventRouter);
 
 // http://localhost:8000/api/v1/users/register
 
